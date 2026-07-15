@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6A11CB,100:2575FC&height=220&section=header&text=Tharunraj%20S&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=AI%20%26%20Data%20Science%20Engineer%20%7C%20Full%20Stack%20Developer&descAlignY=58&descSize=18&animation=fadeIn&v=2" width="100%"/>
+<img src="https://raw.githubusercontent.com/DeveloperTharun/DeveloperTharun/main/banner.svg" width="100%"/>
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=A78BFA&center=true&vCenter=true&width=650&lines=Software+Engineer+%7C+AI%2FML+Enthusiast;Full+Stack+Developer+%E2%80%A2+Spring+Boot+%2B+React;Building+Scalable%2C+Production-Grade+Systems;Open+To+SDE+%2F+AI+Engineer+Roles" alt="Typing SVG" />
