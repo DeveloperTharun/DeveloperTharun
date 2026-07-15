@@ -1,0 +1,31 @@
+name: Generate Banner
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/banner.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  banner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch capsule-render banner
+        run: |
+          curl -sf "https://capsule-render.vercel.app/api?type=waving&color=0:6A11CB,100:2575FC&height=220&section=header&text=Tharunraj%20S&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=AI%20%26%20Data%20Science%20Engineer%20%7C%20Full%20Stack%20Developer&descAlignY=58&descSize=18&animation=fadeIn" -o banner.svg
+          # fail the step if the file is empty or missing (service was down)
+          test -s banner.svg
+
+      - name: Commit banner.svg
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add banner.svg
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update banner.svg" && git push)
