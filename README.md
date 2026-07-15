@@ -210,7 +210,7 @@ Contributed to the design and delivery of responsive, production-grade web appli
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=DeveloperTharun&theme=algolia&no-frame=true&column=7&margin-w=12&margin-h=12"/>
+<img src="https://raw.githubusercontent.com/DeveloperTharun/DeveloperTharun/main/trophy.svg"/>
 
 </div>
 
